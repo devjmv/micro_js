@@ -14,6 +14,7 @@ process.stdin.on('data', function (data) {
     process.exit();
 });
 
+//var text = "el texto";
 //text = text.toUpperCase();
 //
 //if (text.includes('ENGLISH')) {
