@@ -3,6 +3,7 @@ const num2 = document.getElementById('num2');
 const num3 = document.getElementById('num3');
 const result = document.getElementById('result');
 
+//compara tres numeros y devuelve el mayor
 function comparar() {
     if ((num1.value.length == 0) || (num2.value.length == 0) || (num3.value.length == 0))
         result.innerHTML = `Debe introducir todos los numeros.`

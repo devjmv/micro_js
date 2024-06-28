@@ -11,6 +11,7 @@ function revisa() {
         let i = 0;
         let o = 0;
         let u = 0;
+        //separo el string en palabras luego recoro cada letra de esa palabra y busco si es a, e, i, o, u y cuanto cuantas son de cada tipo
         let palabras = frase.value.split(" ");
         for (let palabra of palabras) {
             for (let letra of palabra) {

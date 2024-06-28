@@ -2,6 +2,7 @@ const num1 = document.getElementById('num1');
 const num2 = document.getElementById('num2');
 const result = document.getElementById('result');
 
+//suma dos numeros introdicidos
 function suma() {
     if ((num1.value.length == 0) || (num2.value.length == 0))
         result.innerHTML = `Debe introducir los dos numeros.`
