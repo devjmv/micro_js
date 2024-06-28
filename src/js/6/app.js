@@ -6,8 +6,13 @@ const result = document.getElementById('result');
 function comparar() {
     if ((num1.value.length == 0) || (num2.value.length == 0) || (num3.value.length == 0))
         result.innerHTML = `Debe introducir todos los numeros.`
-    else if (parseInt(num1.value) > parseInt(num2.value))
-        result.innerHTML = `El mayor es el ${num1.value}`
-    else
-        result.innerHTML = `El mayor es el ${num2.value}`
+    else {
+        let mayor = parseInt(num1.value)
+        if (parseInt(num2.value) > mayor)
+            mayor = parseInt(num2.value)
+        if (parseInt(num3.value) > mayor)
+            mayor = parseInt(num3.value)
+        result.innerHTML = `El mayor es el ${mayor}`
+    }
+
 };
